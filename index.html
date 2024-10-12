@@ -143,6 +143,322 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+ <style>
+        /* General Styling */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #f7c08a;
+    transition: color 0.3s ease-in-out;
+}
+
+nav img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Mission Section Styling */
+#mission {
+    background-color: #e7f4ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+img, video {
+  width: 200px; /* Set a fixed width for the images */
+  height: 150px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and crop if needed */
+  margin: 10px; /* Add spacing around each image */
+}
+
+@media only screen and (max-width: 600px) {
+  img, video {
+    width: 150px; /* Adjust width for smaller screens */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+}
+img, video {
+  width: calc(50% - 20px); /* Set the width for each item with margin included */
+  max-width: 300px; /* Set a maximum width for larger screens */
+  height: auto;
+  margin: 10px; /* Add spacing around each item */
+}
+
+@media only screen and (max-width: 600px) {
+  img, video {
+    width: calc(100% - 20px); /* Set full width on smaller screens */
+  }
+}
+
+#mission h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#mission p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* About Us Section Styling */
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-top: 5px solid #007bff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about h2, #about h3 {
+    color: #333;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Donate Section Styling */
+#donate {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#donate h2 {
+    color: #ff4500;
+}
+
+#donate .donation-options {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#donate .donation-options h3 {
+    color: #333;
+}
+
+#donate .donation-options ul li {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Volunteer Section Styling */
+#volunteer {
+    background-color: #e7f4ff;
+    padding: 50px 20px;
+}
+
+#volunteer h2 {
+    color: #333;
+}
+
+#volunteer ul {
+    list-style-type: square;
+    padding: 0 20px;
+}
+
+#volunteer ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact form input, 
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons img {
+    width: 25px;
+    height: auto;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+#lutherspawprintlove-logo-container {
+  width: 50%; /* Increase container width to 50% */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.logo {
+  width: 100%; /* Make logo full width of container */
+  height: auto; /* Maintain aspect ratio */
+  animation: growShrink 4s infinite ease-in-out; /* Add animation */
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Increase logo size by 50% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+nav img {
+    animation: logo-animation 3s infinite ease-in-out;
+}
+
+
+/* Menu Bar Styling */
+nav {
+    background-color: rgba(24, 11, 11, 0.9); /* Semi-transparent white background */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the menu bar */
+}
+
+/* Menu Item Styling */
+nav a {
+    color: #333; /* Dark text color for better contrast */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds subtle shadow to text */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: #0e0707; /* White text on hover */
+    background-color: #007BFF; /* Blue background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Active Menu Item */
+nav a.active {
+    color: #1d0b0b;
+    background-color: #007BFF; /* Active item background */
+    border-radius: 5px;
+}
+    </style>
 
     <footer>
         <p>&copy; 2024 Equality for Pets Animal Rescue Sanctuary. All rights reserved.</p>

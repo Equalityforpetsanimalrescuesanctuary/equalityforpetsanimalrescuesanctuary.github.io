@@ -1,515 +1,861 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-    <!-- End Google Tag Manager -->
-  <link rel="stylesheet" href="style.css">  
 <head>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1393829685060976"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="_21qG8LhFTHZ52Ty-Epit_JuZg2pbNwnQXlLSRRQ2is"> 
-    <meta name="google-adsense-account" content="ca-pub-1393829685060976">
-    <title>Equality for pets animal rescue sanctuary</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to Favicon -->
-    <link rel="icon" href="favicon.ico" type="Img/Profile.jpg">
-    <link rel="icon" href="Img/Profile.jpg" sizes="32x32" type="Img/Profile.jpg">
-    <link rel="icon" href="Img/Profile.jpg" sizes="16x16" type="Img/Profile.jpg">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
+    <title>Equality for pets animal rescue sanctuary| Cat Rescue & Adoption</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a4c93;
+            --secondary: #f9a826;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --accent: #ff7675;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .cta-button {
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #e69016;
+            color: white;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Img/1.jpg') center/cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .hero-buttons .btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .primary-btn {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .primary-btn:hover {
+            background-color: #e69016;
+        }
+        
+        .secondary-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .secondary-btn:hover {
+            background-color: white;
+            color: var(--dark);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 18px;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .stats {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .stats-content {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        .gallery {
+            background-color: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-item-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 20px;
+            color: white;
+        }
+        
+        .gallery-item-info h3 {
+            margin-bottom: 5px;
+        }
+        
+        .donation {
+            background-color: #f8f9fa;
+        }
+        
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .donation-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            max-width: 350px;
+            transition: transform 0.3s;
+        }
+        
+        .donation-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .donation-card i {
+            font-size: 48px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .donation-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .donation-card p {
+            margin-bottom: 25px;
+            color: #6c757d;
+        }
+        
+        .donation-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .donation-btn:hover {
+            background-color: #583c7b;
+        }
+        
+        /* GoFundMe Section Styles */
+        .gofundme-section {
+            background-color: #f0f8ff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .gofundme-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .gofundme-icon {
+            font-size: 64px;
+            color: #00b964; /* GoFundMe green color */
+            margin-bottom: 20px;
+        }
+        
+        .gofundme-title {
+            color: var(--primary);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .gofundme-text {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .gofundme-btn {
+            display: inline-block;
+            background-color: #00b964; /* GoFundMe green color */
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,185,100,0.3);
+        }
+        
+        .gofundme-btn:hover {
+            background-color: #009e54;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,185,100,0.4);
+        }
+        
+        .gofundme-note {
+            margin-top: 20px;
+            font-style: italic;
+            color: #777;
+        }
+        
+        .contact {
+            background-color: white;
+        }
+        
+        .contact-content {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item i {
+            font-size: 24px;
+            color: var(--secondary);
+            margin-right: 15px;
+        }
+        
+        .contact-form {
+            flex: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #583c7b;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #495057;
+            color: white;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .stats-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .gofundme-container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-cat"></i> Equality for pets animal rescue sanctuary
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Cats Gallery</a></li>
+                    <li><a href="#donation">Donate</a></li>
+                    <li><a href="#gofundme">GoFundMe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="cta-button">Adopt Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <center><h1>Equality for pets animal rescue sanctuary</h1></center>
-    <nav>
-        <ul>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#donate">Donate</a></li>
-            <li><a href="#volunteer">Volunteer</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="mission">
-        <h2>Mission Statement</h2>
-        <p>At Equality for pets animal rescue sanctuary, our mission is to rescue and rehome abandoned stray animals in our community, providing shelter, medical care, and love. We're dedicated to raising awareness about animal welfare, promoting adoption, and making a difference in the lives of stray animals in need. With compassion, integrity, and community engagement, we strive to give every stray animal a second chance at a happy life.</p>
-    </section>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Give Them A Second Chance</h1>
+            <p>Help us rescue, rehabilitate, and rehome cats in need. Every donation makes a difference in a cat's life.</p>
+            <div class="hero-buttons">
+                <a href="#donation" class="btn primary-btn">Donate Now</a>
+                <a href="#gofundme" class="btn secondary-btn">Support Our GoFundMe</a>
+            </div>
+        </div>
+    </div>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>At Equality for pets animal rescue sanctuary, we're passionate about improving the lives of stray animals in need. Founded in 2022 by Sandra Aniston, our charity has grown from a small rescue operation to a thriving organization dedicated to animal welfare.</p>
-        <p>We're grateful for our volunteers, who dedicate their time and love to helping stray animals in need.</p>
-        <h3>Our Achievements</h3>
-        <ul>
-            <li>Rescued over 500 stray animals</li>
-            <li>Found forever homes for 300 stray animals</li>
-            <li>Provided medical care and rehabilitation to countless stray animals</li>
-        </ul>
-        <p>Join us in making a difference in the lives of stray animals!</p>
-    </section>
-
-    <section id="donate">
-        <h2>Donate</h2>
-        <p>Support our cause by making a donation to help us continue our mission of rescuing and caring for stray animals in need. Your donation supports our rescue, rehabilitation, and rehoming efforts.</p>
-        <div class="donation-options">
-            <center>
-                <h3>Donate Now</h3>
-                <p>Choose your donation amount:</p>
-                <ul>
-                    <li>One-time donation: £10, £20, £50, or other</li>
-                    <li>Recurring donation: £10/month, £20/quarter, etc.</li>
-                </ul>
-                <img src="Img/3.jpg">
-                <h3>Our Impact</h3>
-                <ul>
-                    <li>£10 feeds a stray animal for a week</li>
-                    <li>£50 provides medical care for a stray animal</li>
-                    <li>£100 supports a stray animal's rehabilitation</li>
-                </ul>
-                
-                <h3>Donate via GoFundMe</h3>
-                <p>Help support our mission to rescue and care for animals in need!</p>
-                <a href="https://gofund.me/9cb952be" target="_blank">
-                    <img src="Img/go fund.jpg" alt="GoFundMe" style="max-width: 200px; margin: 15px 0;">
-                </a>
-                <div style="margin: 20px 0;">
-                    <a id="gofundme-button" href="https://gofund.me/9cb952be" target="_blank" 
-                       style="background-color: #00b964; color: white; padding: 12px 24px; 
-                              border-radius: 6px; font-weight: bold; text-decoration: none; 
-                              display: inline-block; font-size: 16px; margin: 10px 0;">
-                        Donate on GoFundMe
-                    </a>
+        <div class="container">
+            <div class="section-title">
+                <h2>About Equality for pets animal rescue sanctuary</h2>
+                <p>A sanctuary dedicated to the rescue and care of abandoned and mistreated cats</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2015, Equality for pets animal rescue sanctuary is a non-profit cat rescue organization committed to saving the lives of cats in need. Our dedicated team of volunteers works tirelessly to rescue abandoned, neglected, and abused cats, providing them with medical care, shelter, and love until they find their forever homes.</p>
+                    <br>
+                    <p>We believe that every cat deserves a chance at a happy life. Through our adoption program, community education initiatives, and spay/neuter campaigns, we're working to create a world where no cat is left behind.</p>
+                    <br>
+                    <p>Our shelter is a cage-free environment where cats can roam freely, play, and socialize with other cats and human visitors. This approach helps cats maintain their natural behaviors and reduces stress, making their stay with us as comfortable as possible while they wait for adoption.</p>
                 </div>
-                
-                <!--p>Secure Payment: We use PayPal for secure payment processing.</p>
-                <p>Thank You: Thank you for your generosity!</p>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=J79EPL7ZYSZ2Q" target="_blank">
-                    <img src="Img/paypal.png" alt="PayPal">
-                </a>
-                <h2><a id="donate-button" href="https://www.paypal.com/donate/?hosted_button_id=J79EPL7ZYSZ2Q" target="_blank">Donate</a></h2>
-            </center-->
-                <!--p>Secure Payment: We use PayPal for secure payment processing.</p>
-                <p>Thank You: Thank you for your generosity!</p>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=J79EPL7ZYSZ2Q" target="_blank">
-                    <img src="Img/paypal.png" alt="PayPal">
-                </a>
-                <h2><a id="donate-button" href="https://www.paypal.com/donate/?hosted_button_id=J79EPL7ZYSZ2Q" target="_blank">Donate</a></h2>
-            </center-->
+                <div class="about-image">
+                    <img src="Img/tour.jpg" alt="Cat shelter">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="volunteer">
-        <h2>Volunteer Opportunities</h2>
-        <p>Join our team of dedicated volunteers and help make a difference in the lives of stray animals in need!</p>
-        <h3>Opportunities</h3>
-        <ul>
-            <li>Animal walking and socialization</li>
-            <li>Foster care</li>
-            <li>Adoption events</li>
-            <li>Fundraising</li>
-            <li>Administrative tasks</li>
-        </ul>
-        <h3>Benefits</h3>
-        <ul>
-            <li>Make a real difference in animals' lives</li>
-            <li>Gain new skills and experience</li>
-            <li>Meet like-minded people</li>
-            <li>Enhance your resume or career prospects</li>
-        </ul>
-        <h3>Requirements</h3>
-        <ul>
-            <li>Age 18+</li>
-            <li>Time commitment: 2 hours/week</li>
-            <li>Background check required</li>
-        </ul>
-        <p>Apply Now: Contact us at <a href="mailto:equalityforpets81@gmail.com">equalityforpets81@gmail.com</a> or <a href="tel:+966560579608">+966560579608</a> to get started!</p>
-    </section>
+    <div class="stats">
+        <div class="container">
+            <div class="stats-content">
+                <div class="stat-item">
+                    <h3>1,500+</h3>
+                    <p>Cats Rescued</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1,200+</h3>
+                    <p>Adoptions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>250+</h3>
+                    <p>Active Volunteers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>35+</h3>
+                    <p>Community Programs</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section id="gallery">
-        <h2>Our Work Gallery</h2>
-        <div class="gallery-container">
-            <img src="Img/1.jpg" width="20px" height="20px">
-            <img src="Img/mew.jpg" width="20px" height="20px">
-            <img src="Img/2.jpg" width="20px" height="20px">
-            <img src="Img/slp.jpg" width="20px" height="20px">
-            <img src="Img/ci.jpg" width="20px" height="20px">
-            <img src="Img/3.jpg" width="20px" height="20px">
-            <img src="Img/cat.jpg" width="20px" height="20px">
-            <img src="Img/4.jpg" width="20px" height="20px">
-            <img src="Img/tour.jpg" width="20px" height="20px">
-            
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Cats Gallery</h2>
+                <p>Meet some of our adorable feline friends looking for their forever homes</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Img/Hera.jpg" alt="Cat 1">
+                    <div class="gallery-item-info">
+                        <h3>EFPARS</h3>
+                        <p>2 years old • Male • Playful</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/2.jpg" alt="Cat 2">
+                    <div class="gallery-item-info">
+                        <h3>Luna</h3>
+                        <p>3 years old • Female • Affectionate</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/4.jpg" alt="Cat 3">
+                    <div class="gallery-item-info">
+                        <h3>Oliver</h3>
+                        <p>1 year old • Male • Energetic</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/3.jpg" alt="Cat 4">
+                    <div class="gallery-item-info">
+                        <h3>Mittens</h3>
+                        <p>4 years old • Female • Gentle</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/Ci.jpg" alt="Cat 5">
+                    <div class="gallery-item-info">
+                        <h3>Shadow</h3>
+                        <p>2 years old • Male • Curious</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Img/slp.jpg" alt="Cat 6">
+                    <div class="gallery-item-info">
+                        <h3>Bella</h3>
+                        <p>5 years old • Female • Calm</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us for inquiries, partnerships, or any other information.</p>
-        <form action="https://formspree.io/f/xpwanqde" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="phone">Phone Number (optional):</label>
-            <input type="tel" id="phone" name="phone"><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
- <style>
-        /* General Styling */
-body {
-    background-color: #f7f7f7;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3 {
-    font-family: 'Georgia', serif;
-    color: #333;
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    color: #f7c08a;
-    transition: color 0.3s ease-in-out;
-}
-
-nav img {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-/* Mission Section Styling */
-#mission {
-    background-color: #e7f4ff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center items horizontally */
-}
-
-img, video {
-  width: 200px; /* Set a fixed width for the images */
-  height: 150px; /* Set a fixed height for the images */
-  object-fit: cover; /* Maintain aspect ratio and crop if needed */
-  margin: 10px; /* Add spacing around each image */
-}
-
-@media only screen and (max-width: 600px) {
-  img, video {
-    width: 150px; /* Adjust width for smaller screens */
-    height: 100px; /* Adjust height for smaller screens */
-  }
-}
-img, video {
-  width: calc(50% - 20px); /* Set the width for each item with margin included */
-  max-width: 300px; /* Set a maximum width for larger screens */
-  height: auto;
-  margin: 10px; /* Add spacing around each item */
-}
-
-@media only screen and (max-width: 600px) {
-  img, video {
-    width: calc(100% - 20px); /* Set full width on smaller screens */
-  }
-}
-
-#mission h2 {
-    color: #0056b3;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#mission p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    color: #333;
-}
-
-/* About Us Section Styling */
-#about {
-    background-color: #fff;
-    padding: 50px 20px;
-    border-top: 5px solid #007bff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#about h2, #about h3 {
-    color: #333;
-}
-
-#about ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#about ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Donate Section Styling */
-#donate {
-    background-color: #f2f2f2;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#donate h2 {
-    color: #ff4500;
-}
-
-#donate .donation-options {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-}
-
-#donate .donation-options h3 {
-    color: #333;
-}
-
-#donate .donation-options ul li {
-    color: #555;
-    font-size: 1.1em;
-}
-
-/* Volunteer Section Styling */
-#volunteer {
-    background-color: #e7f4ff;
-    padding: 50px 20px;
-}
-
-#volunteer h2 {
-    color: #333;
-}
-
-#volunteer ul {
-    list-style-type: square;
-    padding: 0 20px;
-}
-
-#volunteer ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Contact Section Styling */
-#contact {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#contact form {
-    display: inline-block;
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#contact form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-#contact form input, 
-#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact form button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .social-icons img {
-    width: 25px;
-    height: auto;
-    margin: 0 10px;
-}
-
-footer p {
-    margin: 10px 0 0;
-}
-
-#lutherspawprintlove-logo-container {
-  width: 50%; /* Increase container width to 50% */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center horizontally */
-}
-
-.logo {
-  width: 100%; /* Make logo full width of container */
-  height: auto; /* Maintain aspect ratio */
-  animation: growShrink 4s infinite ease-in-out; /* Add animation */
-}
-
-@keyframes growShrink {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5); /* Increase logo size by 50% */
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-
-nav img {
-    animation: logo-animation 3s infinite ease-in-out;
-}
-
-
-/* Menu Bar Styling */
-nav {
-    background-color: rgba(24, 11, 11, 0.9); /* Semi-transparent white background */
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the menu bar */
-}
-
-/* Menu Item Styling */
-nav a {
-    color: #333; /* Dark text color for better contrast */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds subtle shadow to text */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover Effect */
-nav a:hover {
-    color: #0e0707; /* White text on hover */
-    background-color: #007BFF; /* Blue background on hover */
-    border-radius: 5px; /* Rounded corners on hover */
-}
-
-/* Active Menu Item */
-nav a.active {
-    color: #1d0b0b;
-    background-color: #007BFF; /* Active item background */
-    border-radius: 5px;
-}
-    </style>
-<footer>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Equality for pets animal rescue sanctuary</title>
-            <link rel="stylesheet" href="styles.css">
-
-<link rel="icon" href="favicon.ico" type="Img/Profile.jpg">
- <link rel="icon" href="/favicon-32x32.jpg" sizes="32x32" type="Img/Profile.jpg">
-    <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="Img/Profile.jpg">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        </head>
-        <body>
-            <header>
-                
-                
-                <div class="social-icons">
-                    <a href="https://wa.me/+966560579608"><img src="Img/WhatsApp.png"></a>
-                    <a href="https://www.tiktok.com/@animalrescue013?_t=ZS-8tn6b22mH4h&_r=1"><img src="Img/Tiktok.png"></a>
-                    <a href="https://www.instagram.com/equalityforpets4?igsh=MTc1eTNoMWxydm5lMg=="><img src="Img/Instagram.png" alt="Instagram"></a>
-                    <!--a href="https://x.com/kirabojovia23?t=1h6HL6iw-W73wU3t9q2H5Q&s=09"><img src="Img/X.png"></a-->
+    <section id="donation" class="donation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Support Our Mission</h2>
+                <p>Your donation helps us provide food, shelter, medical care, and love to cats in need</p>
+            </div>
+            <div class="donation-options">
+                <div class="donation-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>One-time Donation</h3>
+                    <p>Make a one-time contribution to support our rescue operations and help cats in need. Every dollar makes a difference!</p>
+                    <a href="https://gofund.me/9cb952be" class="donation-btn">Donate Now</a>
                 </div>
-            </header>
-            
-            
-        </body>
-        </html>
-        <p>&copy; 2025 Equality for pets animal rescue sanctuary All rights reserved.</p>
+                <div class="donation-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Monthly Giving</h3>
+                    <p>Become a sustaining supporter with a monthly donation. Your ongoing support provides stability for our rescue efforts.</p>
+                    <a href="https://gofund.me/9cb952be" class="donation-btn">Become a Supporter</a>
+                </div>
+                <div class="donation-card">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Donation Items</h3>
+                    <p>Donate supplies from our wishlist including food, litter, toys, and bedding to help us care for our cats.</p>
+                    <a href="https://gofund.me/9cb952be" class="donation-btn">View Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New GoFundMe Section -->
+    <section id="gofundme" class="gofundme-section">
+        <div class="container">
+            <div class="gofundme-container">
+                <i class="fas fa-hand-holding-heart gofundme-icon"></i>
+                <h2 class="gofundme-title">Support Our Emergency Fund</h2>
+                <p class="gofundme-text">We've created a GoFundMe campaign to help us meet the urgent needs of our rescue cats. Your contribution will help us cover medical expenses, food, shelter improvements, and rescue operations for the most vulnerable cats in our community.</p>
+                <p class="gofundme-text">Every donation, no matter how small, makes a significant impact on the lives of these cats. Join our compassionate community of supporters today!</p>
+                <a href="https://gofund.me/9cb952be" target="_blank" class="gofundme-btn">Support Our GoFundMe Campaign</a>
+                <p class="gofundme-note">100% of your donation goes directly to helping cats in need at our sanctuary.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have questions? Want to volunteer? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Lebanon</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+966560579608</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>equalityforpets81@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 10am-6pm<br>Sat-Sun: 10am-4pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Equality for pets animal rescue sanctuary</h3>
+                    <p>A non-profit organization dedicated to rescuing and rehoming cats in need.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Cats Gallery</a></li>
+                        <li><a href="#donation">Donate</a></li>
+                        <li><a href="#gofundme">GoFundMe</a></li>
+                        <li><a href="#">Adoption Process</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Foster Program</a></li>
+                        <li><a href="#">Spay/Neuter Services</a></li>
+                        <li><a href="#">Community Cats</a></li>
+                        <li><a href="#">Education Outreach</a></li>
+                        <li><a href="#">Senior Cats Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates on our cats and events.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: none;">
+                        <button type="submit" style="width: 100%; padding: 10px; margin-top: 10px; background-color: var(--secondary); color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Equality for pets animal rescue sanctuary. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-</body>
- </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

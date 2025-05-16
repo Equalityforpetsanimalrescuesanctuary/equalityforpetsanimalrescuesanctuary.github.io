@@ -12,6 +12,8 @@
             --light: #f8f9fa;
             --dark: #343a40;
             --accent: #ff7675;
+            --paypal-blue: #003087;
+            --paypal-light-blue: #0070e0;
         }
         
         * {
@@ -318,44 +320,62 @@
             background-color: #583c7b;
         }
         
-        /* GoFundMe Section Styles */
-        .gofundme-section {
-            background-color: #f0f8ff;
+        /* PayPal Section Styles */
+        .paypal-section {
+            background-color: #f5f9ff;
             padding: 60px 0;
             text-align: center;
         }
         
-        .gofundme-container {
+        .paypal-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%);
+            border: 1px solid #e1e8ed;
         }
         
-        .gofundme-icon {
-            font-size: 64px;
-            color: #00b964; /* GoFundMe green color */
-            margin-bottom: 20px;
+        .paypal-logo {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .gofundme-title {
+        .paypal-logo i {
+            font-size: 42px;
+            color: var(--paypal-blue);
+            margin-right: 10px;
+        }
+        
+        .paypal-logo span {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--paypal-blue);
+            letter-spacing: -1px;
+        }
+        
+        .paypal-title {
             color: var(--primary);
             font-size: 32px;
             margin-bottom: 20px;
         }
         
-        .gofundme-text {
+        .paypal-text {
             font-size: 18px;
             color: #555;
             margin-bottom: 30px;
             line-height: 1.7;
         }
         
-        .gofundme-btn {
-            display: inline-block;
-            background-color: #00b964; /* GoFundMe green color */
+        .paypal-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--paypal-blue);
             color: white;
             padding: 15px 40px;
             border-radius: 50px;
@@ -363,19 +383,38 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0,185,100,0.3);
+            box-shadow: 0 5px 15px rgba(0,112,224,0.3);
         }
         
-        .gofundme-btn:hover {
-            background-color: #009e54;
+        .paypal-btn i {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        
+        .paypal-btn:hover {
+            background-color: var(--paypal-light-blue);
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,185,100,0.4);
+            box-shadow: 0 8px 20px rgba(0,112,224,0.4);
         }
         
-        .gofundme-note {
+        .paypal-note {
             margin-top: 20px;
             font-style: italic;
             color: #777;
+        }
+        
+        .paypal-security {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 15px;
+        }
+        
+        .paypal-security i {
+            margin-right: 10px;
+            color: #28a745;
         }
         
         .contact {
@@ -550,7 +589,7 @@
                 display: none;
             }
             
-            .gofundme-container {
+            .paypal-container {
                 padding: 20px;
             }
         }
@@ -567,7 +606,7 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#gallery">Cats Gallery</a></li>
                     <li><a href="#donation">Donate</a></li>
-                    <li><a href="#gofundme">GoFundMe</a></li>
+                    <li><a href="#paypal">PayPal</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#" class="cta-button">Adopt Now</a></li>
                 </ul>
@@ -581,7 +620,7 @@
             <p>Help us rescue, rehabilitate, and rehome cats in need. Every donation makes a difference in a cat's life.</p>
             <div class="hero-buttons">
                 <a href="#donation" class="btn primary-btn">Donate Now</a>
-                <a href="#gofundme" class="btn secondary-btn">Support Our GoFundMe</a>
+                <a href="#paypal" class="btn secondary-btn">Support via PayPal</a>
             </div>
         </div>
     </div>
@@ -694,34 +733,42 @@
                     <i class="fas fa-paw"></i>
                     <h3>One-time Donation</h3>
                     <p>Make a one-time contribution to support our rescue operations and help cats in need. Every dollar makes a difference!</p>
-                    <a href="https://gofund.me/9cb952be" class="donation-btn">Donate Now</a>
+                    <a href="https://www.paypal.com/donate?hosted_button_id=SX4UWLXFWEDU6" class="donation-btn">Donate Now</a>
                 </div>
                 <div class="donation-card">
                     <i class="fas fa-heart"></i>
                     <h3>Monthly Giving</h3>
                     <p>Become a sustaining supporter with a monthly donation. Your ongoing support provides stability for our rescue efforts.</p>
-                    <a href="https://gofund.me/9cb952be" class="donation-btn">Become a Supporter</a>
+                    <a href="https://www.paypal.com/donate?hosted_button_id=SX4UWLXFWEDU6" class="donation-btn">Become a Supporter</a>
                 </div>
                 <div class="donation-card">
                     <i class="fas fa-box-open"></i>
                     <h3>Donation Items</h3>
                     <p>Donate supplies from our wishlist including food, litter, toys, and bedding to help us care for our cats.</p>
-                    <a href="https://gofund.me/9cb952be" class="donation-btn">View Wishlist</a>
+                    <a href="https://www.paypal.com/donate?hosted_button_id=SX4UWLXFWEDU6" class="donation-btn">View Wishlist</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- New GoFundMe Section -->
-    <section id="gofundme" class="gofundme-section">
+    <!-- New PayPal Section -->
+    <section id="paypal" class="paypal-section">
         <div class="container">
-            <div class="gofundme-container">
-                <i class="fas fa-hand-holding-heart gofundme-icon"></i>
-                <h2 class="gofundme-title">Support Our Emergency Fund</h2>
-                <p class="gofundme-text">We've created a GoFundMe campaign to help us meet the urgent needs of our rescue cats. Your contribution will help us cover medical expenses, food, shelter improvements, and rescue operations for the most vulnerable cats in our community.</p>
-                <p class="gofundme-text">Every donation, no matter how small, makes a significant impact on the lives of these cats. Join our compassionate community of supporters today!</p>
-                <a href="https://gofund.me/9cb952be" target="_blank" class="gofundme-btn">Support Our GoFundMe Campaign</a>
-                <p class="gofundme-note">100% of your donation goes directly to helping cats in need at our sanctuary.</p>
+            <div class="paypal-container">
+                <div class="paypal-logo">
+                    <i class="fab fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <h2 class="paypal-title">Support Our Sanctuary Through PayPal</h2>
+                <p class="paypal-text">Your generous donation through PayPal directly supports our mission to rescue, rehabilitate, and rehome cats in need. We rely on your contributions to provide essential medical care, nutritious food, comfortable shelter, and enrichment for our feline friends.</p>
+                <p class="paypal-text">Whether it's a one-time gift or a recurring donation, every contribution makes a meaningful difference in the lives of our cats. Help us continue our vital work by donating securely through PayPal today.</p>
+                <a href="https://www.paypal.com/donate?hosted_button_id=SX4UWLXFWEDU6" target="_blank" class="paypal-btn">
+                    <i class="fab fa-paypal"></i> Donate via PayPal
+                </a>
+                <p class="paypal-note">100% of your donation supports the cats in our care. Equality for pets animal rescue sanctuary is a non-profit organization.</p>
+                <div class="paypal-security">
+                    <i class="fas fa-lock"></i> Secure, encrypted payment processing through PayPal
+                </div>
             </div>
         </div>
     </section>
@@ -808,7 +855,7 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#gallery">Cats Gallery</a></li>
                         <li><a href="#donation">Donate</a></li>
-                        <li><a href="#gofundme">GoFundMe</a></li>
+                        <li><a href="#paypal">PayPal</a></li>
                         <li><a href="#">Adoption Process</a></li>
                         <li><a href="#">Volunteer</a></li>
                     </ul>
@@ -846,16 +893,3 @@
                 
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
